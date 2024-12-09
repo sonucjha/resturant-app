@@ -24,7 +24,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'user' . $i . '@example.com',
                 'role' => $i === 1 ? 'admin' : 'user', // First user as admin, others as user
                 'email_verified_at' => now(),
-                'password' => Hash::make('password123'), // Default password
+                'password' => Hash::make('123'), // Default password
                 'remember_token' => Str::random(10),
             ]);
         }
